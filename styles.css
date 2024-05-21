@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
   color:black;
   height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
   overflow-x: hidden; /* Previene el desbordamiento horizontal */
