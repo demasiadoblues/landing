@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+  font-family: "Roboto" ,Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFDE59;
+  background-image: url("imagenes/CODIGO.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:black;
+  height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+  overflow-x: hidden; /* Previene el desbordamiento horizontal */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+/* Estilos de encabezado */
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center; /* Centra el contenido del encabezado */
+}
+
+h1 {
+  margin: 0;
+  color: #FFDE59;
+}
+
+/* Navegación */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra los elementos de navegación */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas */
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFDE59;
+  border: solid 1px #FFDE59;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* Estilos de secciones */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+section ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Centra los elementos de navegación */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas */
+  padding-inline: 1px;
+  margin: 0;
+}
+section ul li {
+  margin: 0 10px; /* Ajusta el margen horizontal para separar los elementos */
+}
+#features ul li {
+  font-size: 1.5rem; /* Tamaño de fuente grande para los elementos de la lista */
+  font-weight: bold; /* Hace que la fuente de los elementos de la lista sea más gruesa */
+  margin: 0 10px; /* Añade espacio entre los elementos de la lista */
+}
+
+#hero {
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos de formulario de contacto */
+form input,
+form textarea {
+  width: 100%; /* Ajusta el ancho a 100% del contenedor padre */
+  max-width: 400px; /* Limita el ancho máximo */
+  display: block;
+  margin: 10px auto; /* Centra los elementos del formulario */
+  
+}
+
+#contact {
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 10px auto; /* Centra el contenedor de contacto */
+  padding: 20px;
+  max-width: 400px; /* Limita el ancho máximo */
+  background-color: black; /* Añade un fondo semi-transparente */
+  color: #FFDE59;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  body {
+      background-size: cover; /* Asegura que el fondo cubra la pantalla en dispositivos pequeños */
+      height: auto; /* Permite que el contenido se extienda más allá de la altura de la pantalla */
+  }
+
+  header {
+      padding: 10px;
+  }
+
+  nav ul {
+      flex-direction: column; /* Apila los elementos de navegación verticalmente */
+      align-items: center;
+  }
+
+  nav li {
+      margin: 5px 0;
+  }
+
+  section {
+      padding: 20px 10px;
+  }
+
+  form input,
+  form textarea {
+      width: 100%; /* Asegura que los campos de formulario ocupen todo el ancho disponible */
+  }
+
+  #contact {
+      margin: 10px 20px; /* Ajusta los márgenes para dispositivos pequeños */
+  }
+}
